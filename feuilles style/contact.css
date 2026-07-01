@@ -1,0 +1,269 @@
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #a89f9f9f;
+  border-bottom: 2px solid #000;
+  top: 0;
+  width: 100%;
+  box-sizing: border-box; 
+  overflow-x: hidden;     
+  z-index: 1000;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 130px;
+  width: 130px;
+  border: 2px solid black;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: all 0.3s ease;
+  flex-shrink: 0; 
+}
+
+.logo:hover {
+  background-color: rgb(19, 141, 255);
+  transform: scale(1.05);
+}
+
+.logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 10px;              
+  flex-wrap: nowrap;     
+  overflow-x: hidden;  
+  overflow-y: hidden; 
+  flex-wrap: wrap; 
+}
+
+.menu a {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  border: 2px solid black;
+  border-radius: 8px;
+  padding: 15px 20px;      
+  background-color: rgb(247, 247, 247);
+  transition: all 0.3s ease;
+  font-size: 1rem;    
+  white-space: nowrap;   
+}
+
+.menu a:hover {
+  background-color: #b9b9b9;
+  border: 2px solid blue;
+  transform: scale(1.05);
+}
+
+.menu a.active4 {
+  background-color: rgb(51, 186, 239);
+  color: white;
+  cursor: default;
+  border: 2px solid #000;
+}
+
+body {
+  margin: 0;
+  overflow-x: hidden; 
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 50px;
+}
+
+main .container {
+  display: flex;
+  flex-direction: row;
+}
+
+main .container .information {
+  width: 50%;
+  margin-right: 10px;
+  padding: 20px;
+  border: 2px solid black;
+}
+
+main .container .googlemap {
+  width: 50%;
+  margin-left: 10%;
+  border: 2px solid black;
+  padding: 20px;
+}
+
+main .container .googlemap section {
+  display: flex;
+}
+
+main .container2 {
+  display: flex;
+  margin-top: 50px;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+main .container2 form {
+  border: 2px solid black;
+  padding: 40px 50px;
+  width: 500px;
+
+  background-color: rgba(211, 211, 211, 0.668);
+}
+
+main .container2 .formulair {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+main .container2 label {
+  width: 80px;
+  font-weight: bold;
+  margin-right: 20px;
+}
+
+main .container2 input,
+select,
+textarea {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid black;
+  border-radius: 3px;
+  font-size: 14px;
+  background-color: rgb(38, 236, 250);
+}
+
+main .container2 button {
+  display: block;
+  margin: 0 200px 0;
+  padding: 8px 18px;
+  font-size: 14px;
+  border: 1 solid black;
+  background-color: #57faf7;
+  cursor: pointer;
+  border-radius: 3px;
+  align-items: end;
+}
+footer {
+  background-color: #c6c0c0;
+  padding: 30px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+
+footer .newsletter-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: rgb(183, 184, 192);
+  width: 60%;
+  margin: 0 auto 20px auto;
+}
+
+.email-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin: 10px auto 20px auto;
+}
+
+.email-form input[type="email"] {
+  padding: 10px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  width: 250px;
+  outline: none;
+}
+
+.email-form button {
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  background-color: #37e8f8;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.email-form button:hover {
+  background-color: #30d2d2;
+}
+
+footer .icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+footer .icons a {
+  width: 48px;
+  height: 48px;
+  background-color: #32faf0;
+  border: 1px solid #000;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+footer .icons a:hover {
+  background-color: #000;
+  transform: scale(1.1);
+}
+
+footer .icons i {
+  color: #000;
+  font-size: 24px;
+}
+
+footer .icons a:hover i {
+  color: #fff;
+}
+
+@media (max-width: 850px) {
+  main .container {
+    flex-direction: column;
+    gap: 10px;
+  }
+  main .container .information {
+    width: 100%;
+  }
+  main .container .googlemap {
+    width: 100%;
+  }
+}
+
+@media (min-width: 851px) and (max-width: 1072px) {
+  main .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  main .container .information {
+    width: 50%;
+  }
+  main .container .googlemap {
+    width: 50%;
+  }
+}
